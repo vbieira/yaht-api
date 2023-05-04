@@ -17,5 +17,8 @@ Metrics/BlockLength:
   Exclude:
     - Guardfile
 
+RSpec/MultipleExpectations:
+  Max: 2
+
 Style/Documentation:
   Enabled: false
