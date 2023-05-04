@@ -1,24 +1,27 @@
-# README
+# Yet Another Habits Tracker - API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Requirements
 
-Things you may want to cover:
+Please ensure you are using Docker Compose V2. This project relies on the docker compose command, not the previous docker-compose standalone program.
 
-* Ruby version
+https://docs.docker.com/compose/#compose-v2-and-the-new-docker-compose-command
 
-* System dependencies
+Check your docker compose version with:
 
-* Configuration
+```sh
+$ docker compose version # => Docker Compose version v2.10.2
+```
 
-* Database creation
+## Initial setup
 
-* Database initialization
+```sh
+$ cp .env.sample .env
+$ docker compose build
+$ docker compose run --rm api bin/rails db:setup
+```
 
-* How to run the test suite
+## Running the Rails API
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```sh
+$ docker compose up
+```
