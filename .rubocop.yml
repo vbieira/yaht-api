@@ -13,5 +13,9 @@ require:
   - rubocop-rails
   - rubocop-rspec
 
+Metrics/BlockLength:
+  Exclude:
+    - Guardfile
+
 Style/Documentation:
   Enabled: false
